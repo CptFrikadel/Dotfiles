@@ -315,6 +315,5 @@ bindsym $mod+F1 exec urxvt -e ranger
 bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec nautilus
 bindsym $mod+F4 exec atom
-bindsym $mod+F5 exec "matlab -desktop"
-bindsym $mod+F6 exec i3-msg "append_layout /home/alexander/.i3/matlab.json"; exec "matlab -desktop"
+bindsym $mod+F5 exec i3-msg "append_layout /home/alexander/.i3/matlab.json"; exec "matlab -desktop"
 bindsym Print 	exec gnome-screenshot
