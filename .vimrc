@@ -34,6 +34,7 @@ Plugin 'mboughaba/i3config.vim'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'lervag/vimtex'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -78,3 +79,19 @@ autocmd FileType markdown nnoremap <Leader>h :! pandoc % --toc -s --mathjax -o %
 " Colors
 highlight Folded ctermfg=4 ctermbg=8
 highlight SpellBad ctermfg=7 ctermbg=9
+
+
+" NerdTree stuff
+nnoremap <C-n> :NERDTreeToggle <CR>
+" Auto close when tree is only open window
+autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Tab switching
+no <C-j> <C-w>j | "Switching Below tab
+no <C-k> <C-w>k | "Switching Above tab
+no <C-l> <C-w>l | "Switching Right tab
+no <C-h> <C-w>h | "Switching Left tab
+
+
+
+
