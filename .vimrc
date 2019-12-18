@@ -35,6 +35,10 @@ Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'lervag/vimtex'
 Plugin 'scrooloose/nerdtree'
+Plugin 'ebranlard/vim-matlab-behave'
+Plugin 'justinmk/vim-syntax-extra'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'mkitt/tabline.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -63,6 +67,7 @@ aug end
 
 set mouse=a
 set tabstop=4
+set shiftwidth=4
 
 
 " vimtex stuffs
@@ -91,7 +96,3 @@ no <C-j> <C-w>j | "Switching Below tab
 no <C-k> <C-w>k | "Switching Above tab
 no <C-l> <C-w>l | "Switching Right tab
 no <C-h> <C-w>h | "Switching Left tab
-
-
-
-
