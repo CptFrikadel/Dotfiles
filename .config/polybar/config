@@ -1,8 +1,4 @@
 [colors]
-;bar-background = #212425
-;bar-foreground = #f7f7f7
-;mod-background = #4d4d4d
-;mod-foreground = #f7f7f7
 bar-background = #282a36
 bar-foreground = #eff0eb
 mod-background = #4f4b58

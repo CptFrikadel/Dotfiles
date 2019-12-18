@@ -240,7 +240,7 @@ exec_always --no-startup-id dunst
 
 
 # Theme colors
-client.focused #bfbfbf #162025 #bfbfbf #f7f7f7 #193a48
+client.focused #4f4b58 #162025 #bfbfbf #4f4b58 #eff0eb
 client.focused_inactive #bfbfbf #162025 #bfbfbf #193a48 #193a48
 client.unfocused #bfbfbf #162025 #bfbfbf #193a48 #193a48
 client.urgent #bfbfbf #162025 #bfbfbf #193a48 #193a48
@@ -266,6 +266,7 @@ mode "$mode_gaps" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
 mode "$mode_gaps_inner" {
         bindsym plus  gaps inner current plus 5
         bindsym minus gaps inner current minus 5
@@ -278,6 +279,7 @@ mode "$mode_gaps_inner" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
 mode "$mode_gaps_outer" {
         bindsym plus  gaps outer current plus 5
         bindsym minus gaps outer current minus 5
@@ -310,6 +312,9 @@ bindsym XF86MonBrightnessDown exec light -U 10
 bindsym $mod+Ctrl+space exec playerctl play-pause
 bindsym $mod+Ctrl+Left exec playerctl previous
 bindsym $mod+Ctrl+Right exec playerctl next
+
+# Compton bindings
+bindsym $mod+Shift+o exec compton-trans -o 100
 
 # Map applications to F-keys
 bindsym $mod+F1 exec urxvt -e ranger
