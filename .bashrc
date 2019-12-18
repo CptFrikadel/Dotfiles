@@ -96,6 +96,7 @@ alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
 alias ll="ls -l"
+alias la="ls -al"
 
 xhost +local:root > /dev/null 2>&1
 
@@ -157,3 +158,6 @@ PERL_LOCAL_LIB_ROOT="/home/alexander/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_L
 PERL_MB_OPT="--install_base \"/home/alexander/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/alexander/perl5"; export PERL_MM_OPT;
 alias config='/usr/bin/git --git-dir=/home/alexander/.cfg/ --work-tree=/home/alexander'
+
+
+
