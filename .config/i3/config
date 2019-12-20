@@ -240,9 +240,9 @@ exec_always --no-startup-id dunst
 
 
 # Theme colors
-client.focused #4f4b58 #162025 #bfbfbf #4f4b58 #eff0eb
+client.focused #bfbfbf #162025 #bfbfbf #4f4b58 #eff0eb
 client.focused_inactive #bfbfbf #162025 #bfbfbf #193a48 #193a48
-client.unfocused #bfbfbf #162025 #bfbfbf #193a48 #193a48
+client.unfocused #162025 #162025 #bfbfbf #193a48 #193a48
 client.urgent #bfbfbf #162025 #bfbfbf #193a48 #193a48
 client.placeholder #bfbfbf #162025 #bfbfbf #193a48 #193a48
 
