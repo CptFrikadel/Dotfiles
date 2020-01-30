@@ -1,8 +1,8 @@
 [colors]
-bar-background = #282a36
-bar-foreground = #eff0eb
-mod-background = #4f4b58
-mod-foreground = #eff0eb
+bar-background = ${xrdb:background:#272822}
+bar-foreground = ${xrdb:foreground:#f8f8f8}
+mod-background = ${xrdb:color8:#f8f8f8}
+mod-foreground = ${xrdb:foreground:#f8f8f8}
 
 [bar/i3wmthemer_bar]
 width = 100%
