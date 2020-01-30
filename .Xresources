@@ -1,49 +1,3 @@
-! special
-!*.foreground:   #f7f7f7
-!*.background:   #212425
-!*.cursorColor:  #f7f7f7
-!
-!! black
-!*.color0:       #000000
-!*.color8:       #4d4d4d
-!
-!! red
-!*.color1:       #cc1e1d
-!*.color9:       #3e0605
-!
-!! green
-!*.color2:       #2dcb17
-!*.color10:      #1bcc00
-!
-!! yellow
-!*.color3:       #cecb00
-!*.color11:      #fffd00
-!
-!! blue
-!*.color4:       #384dd1
-!*.color12:      #2724ff
-!
-!! magenta
-!*.color5:       #ad1ab2
-!*.color13:      #fd28ff
-!
-!! cyan
-!*.color6:       #0dcdcd
-!*.color14:      #14ffff
-!
-!! white
-!*.color7:       #e5e5e5
-!*.color15:      #ffffff
-!
-!
-!URxvt.depth:                      32
-!URxvt*scrollBar:                  false
-!URxvt*mouseWheelScrollPage:       false
-!URxvt*cursorBlink:                true
-!URxvt*saveLines:                  5000
-!URxvt*internalBorder: 5
-!URxvt*geometry: 70x19
-
 
 Xft.dpi:                        109
 URxvt*termName:                 rxvt-256color
@@ -64,7 +18,7 @@ URxvt.clipboard.autocopy:       true
 URxvt.geometry:					80x24
 
 ! Colors
-*background:   [97]#282a36
+*background:   #282a36
 *foreground:   #eff0eb
 *cursorColor:  #9aedfe
 

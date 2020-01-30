@@ -39,6 +39,7 @@ Plugin 'ebranlard/vim-matlab-behave'
 Plugin 'justinmk/vim-syntax-extra'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'mkitt/tabline.vim'
+Plugin 'connorholyday/vim-snazzy'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -82,8 +83,8 @@ autocmd FileType markdown nnoremap <Leader>h :! pandoc % --toc -s --mathjax -o %
 
 
 " Colors
-highlight Folded ctermfg=4 ctermbg=8
-highlight SpellBad ctermfg=7 ctermbg=9
+" highlight Folded ctermfg=4 ctermbg=8
+" highlight SpellBad ctermfg=7 ctermbg=9
 
 
 " NerdTree stuff
