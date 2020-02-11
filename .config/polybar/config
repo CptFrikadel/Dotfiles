@@ -77,9 +77,9 @@ format-connected = %{A1:nm-connection-editor:} <label-connected>%{A}
 format-connected-foreground = ${colors.mod-foreground}
 format-connected-background = ${colors.mod-background}
 format-connected-padding = 2
-label-connected = %essid% %signal%%
+label-connected =  %essid% %signal%%
 
-format-disconnected = %{A1:nm-connection-editor:}Not Connected! %{A} 
+format-disconnected =  %{A1:nm-connection-editor:}Not Connected! %{A} 
 
 ramp-signal-0 = 
 ramp-signal-1 = 
@@ -99,7 +99,7 @@ format-connected-foreground = ${colors.mod-foreground}
 format-connected-background = ${colors.mod-background}
 format-connected-prefix = " "
 format-connected-prefix-foreground = #162025
-label-connected = %local_ip%
+label-connected =  %local_ip%
 
 format-disconnected =
 
@@ -165,7 +165,7 @@ poll-interval = 5
 format-charching = <label-charging>
 format-discharging = <label-discharging>
 format-full = <label-full>
-label-charging = Chrg:%percentage%%
+label-charging =  %percentage%%
 label-discharging = Bat:%percentage%%
 label-full = Full
 
@@ -173,14 +173,14 @@ label-full = Full
 type = internal/pulseaudio
 use-ui-max = true
 interval = 5
-format-volume = Vol:<label-volume>
+format-volume =  <label-volume>
 
 format-foreground = #162025
 format-background = ${colors.mod-background}
 
 
 label-volume = %percentage%%
-label-muted = Muted (%percentage%%)
+label-muted =  (%percentage%%)
 
 [module/player-mpris-tail]
 type = custom/script
