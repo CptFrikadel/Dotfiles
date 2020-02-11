@@ -31,7 +31,7 @@ font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = i3 player-mpris-tail
 modules-center = date
-modules-right = eth wlan pulseaudio  battery 
+modules-right = eth wlan pulseaudio  battery powermenu
 
 tray-position = 
 ;tray-padding =
@@ -128,7 +128,7 @@ expand-right = true
 format-spacing = 1
 
 label-open = 
-label-open-foreground = ${colors.mod-background}
+label-open-foreground = ${colors.mod-foreground}
 label-close =  cancel
 label-close-foreground = ${colors.mod-background}
 label-separator = |
@@ -166,8 +166,8 @@ format-charching = <label-charging>
 format-discharging = <label-discharging>
 format-full = <label-full>
 label-charging =  %percentage%%
-label-discharging = Bat:%percentage%%
-label-full = Full
+label-discharging =  %percentage%%
+label-full =  %percentage%%
 
 [module/pulseaudio]
 type = internal/pulseaudio
