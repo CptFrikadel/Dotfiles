@@ -31,7 +31,7 @@ font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = i3 player-mpris-tail
 modules-center = date
-modules-right = eth wlan pulseaudio  battery powermenu
+modules-right = memory cpu eth wlan pulseaudio  battery powermenu
 
 tray-position = 
 ;tray-padding =
@@ -190,6 +190,19 @@ label = %output%
 click-left = ~/polybar-scripts/player-mpris-tail.py previous
 click-right = ~/polybar-scripts/player-mpris-tail.py next
 click-middle = ~/polybar-scripts/player-mpris-tail.py play-pause
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+format = <label>
+label =  %percentage%%
+
+[module/memory]
+type = internal/memory
+interval = 3
+format = <label>
+label =  %percentage_used%%
+
 
 [settings]
 screenchange-reload = true
