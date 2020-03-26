@@ -79,7 +79,7 @@ format-connected-background = ${colors.mod-background}
 format-connected-padding = 2
 label-connected =  %essid% %signal%%
 
-format-disconnected =  %{A1:nm-connection-editor:}Not Connected! %{A} 
+# format-disconnected =  %{A1:nm-connection-editor:}Not Connected! %{A} 
 
 ramp-signal-0 = 
 ramp-signal-1 = 
@@ -195,7 +195,7 @@ click-middle = ~/polybar-scripts/player-mpris-tail.py play-pause
 type = internal/cpu
 interval = 1
 format = <label>
-label =  %percentage%%
+label =  %percentage:2%%
 
 [module/memory]
 type = internal/memory

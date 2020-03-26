@@ -161,4 +161,20 @@ PERL_MM_OPT="INSTALL_BASE=/home/alexander/perl5"; export PERL_MM_OPT;
 alias config='/usr/bin/git --git-dir=/home/alexander/.cfg/ --work-tree=/home/alexander'
 
 
+alias dataenv='source ~/.venv/2IAB0/bin/activate'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/alexander/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/alexander/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/alexander/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/alexander/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
