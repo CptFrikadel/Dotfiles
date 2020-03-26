@@ -1,3 +1,5 @@
+#include ".config/Colorschemes/nord"
+
 Xft.dpi:                        109
 URxvt*termName:                 rxvt-256color
 URxvt*font:                     xft:DejaVu Sans Mono:pixelsize=14
@@ -15,43 +17,6 @@ URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
 URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
 URxvt.clipboard.autocopy:       true
 URxvt.geometry:					80x24
-
-! special
-*.foreground:   #f8f8f2
-*.background:   #272822
-*.cursorColor:  #f8f8f2
-
-! black
-*.color0:       #272822
-*.color8:       #75715e
-
-! red
-*.color1:       #f92672
-*.color9:       #f92672
-
-! green
-*.color2:       #a6e22e
-*.color10:      #a6e22e
-
-! yellow
-*.color3:       #f4ab44
-*.color11:      #f4ab44
-
-! blue
-*.color4:       #66d9ef
-*.color12:      #66d9ef
-
-! magenta
-*.color5:       #ae81ff
-*.color13:      #ae81ff
-
-! cyan
-*.color6:       #a1efe4
-*.color14:      #a1efe4
-
-! white
-*.color7:       #f8f8f2
-*.color15:      #f9f8f5
 
 rofi.color-enabled: true
 rofi.color-window: #162025, #193a48, #193a48
