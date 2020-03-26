@@ -1,4 +1,4 @@
-#include ".config/Colorschemes/nord"
+#include ".config/Colorschemes/dracula.Xresources"
 
 Xft.dpi:                        109
 URxvt*termName:                 rxvt-256color
