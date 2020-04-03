@@ -13,7 +13,7 @@ font xft:URWGothic-Book 11
 
 floating_modifier $mod
 
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # Window kill command
 bindsym $mod+Shift+q kill
@@ -318,10 +318,10 @@ bindsym $mod+Ctrl+Right exec playerctl next
 bindsym $mod+Shift+o exec compton-trans -o 100
 
 # Map applications to F-keys
-bindsym $mod+F1 exec urxvt -e ranger
+bindsym $mod+F1 exec alacritty -e ranger
 bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec nautilus
 bindsym $mod+F4 exec atom
 bindsym $mod+F5 exec i3-msg "append_layout /home/alexander/.i3/matlab.json"; exec "matlab -desktop"
-bindsym $mod+F6 exec i3-msg "append_layout /home/alexander/.i3/matlab_term.json"; exec urxvt -e "matlab -nodesktop -nosplash"; 
+bindsym $mod+F6 exec i3-msg "append_layout /home/alexander/.i3/matlab_term.json"; exec alacritty -e "matlab -nodesktop -nosplash"; 
 bindsym Print 	exec gnome-screenshot
