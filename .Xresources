@@ -1,7 +1,6 @@
 #include ".config/Colorschemes/dracula-256.Xresources"
 
 Xft.dpi:                        109
-URxvt*termName:                 rxvt-256color
 URxvt*font:                     xft:DejaVu Sans Mono:pixelsize=14
 URxvt.depth:                    0
 URxvt*lineSpace:                1

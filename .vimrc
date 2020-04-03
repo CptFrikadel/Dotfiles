@@ -66,6 +66,10 @@ aug i3config_ft_detection
   au!
   au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
 aug end
+aug polybar_config_ft_detection
+  au!
+  au BufNewFile,BufRead ~/.config/polybar/config set filetype=dosini
+aug end
 
 set mouse=a
 set tabstop=4
@@ -84,8 +88,8 @@ autocmd FileType markdown nnoremap <Leader>h :! pandoc % --toc -s --mathjax -o %
 
 
 " Colors
-" highlight Folded ctermfg=4 ctermbg=8
-" highlight SpellBad ctermfg=7 ctermbg=9
+highlight Folded ctermfg=4 ctermbg=8
+highlight SpellBad ctermfg=7 ctermbg=9
 
 
 " NerdTree stuff
