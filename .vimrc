@@ -24,7 +24,9 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
+
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
@@ -42,6 +44,8 @@ Plugin 'mkitt/tabline.vim'
 Plugin 'connorholyday/vim-snazzy'
 "Plugin 'stevearc/vim-arduino'
 Plugin 'sophacles/vim-processing'
+Plugin 'itchyny/lightline.vim'
+Plugin 'dracula/vim', {'name':'dracula'}
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -104,3 +108,32 @@ no <C-j> <C-w>j | "Switching Below tab
 no <C-k> <C-w>k | "Switching Above tab
 no <C-l> <C-w>l | "Switching Right tab
 no <C-h> <C-w>h | "Switching Left tab
+
+" LightLine stuff
+set laststatus=2
+set noshowmode
+let g:lightline = {
+	\ 'colorscheme' : 'darcula',
+	\ }
+
+" Colors from Distro Tube (Dracula theme)
+  highlight LineNr           ctermfg=8    ctermbg=none    cterm=none
+  highlight CursorLineNr     ctermfg=7    ctermbg=8       cterm=none
+  highlight VertSplit        ctermfg=0    ctermbg=8       cterm=none
+  highlight Statement        ctermfg=2    ctermbg=none    cterm=none
+  highlight Directory        ctermfg=4    ctermbg=none    cterm=none
+  highlight StatusLine       ctermfg=7    ctermbg=8       cterm=none
+  highlight StatusLineNC     ctermfg=7    ctermbg=8       cterm=none
+  highlight NERDTreeClosable ctermfg=2
+  highlight NERDTreeOpenable ctermfg=8
+  highlight Comment          ctermfg=4    ctermbg=none    cterm=none
+  highlight Constant         ctermfg=12   ctermbg=none    cterm=none
+  highlight Special          ctermfg=4    ctermbg=none    cterm=none
+  highlight Identifier       ctermfg=6    ctermbg=none    cterm=none
+  highlight PreProc          ctermfg=5    ctermbg=none    cterm=none
+  highlight String           ctermfg=12   ctermbg=none    cterm=none
+  highlight Number           ctermfg=1    ctermbg=none    cterm=none
+  highlight Function         ctermfg=1    ctermbg=none    cterm=none
+
+" Remove pipe symbols from splits
+set fillchars+=vert:\ 
