@@ -40,7 +40,8 @@ Plugin 'justinmk/vim-syntax-extra'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'mkitt/tabline.vim'
 Plugin 'connorholyday/vim-snazzy'
-Plugin 'stevearc/vim-arduino'
+"Plugin 'stevearc/vim-arduino'
+Plugin 'sophacles/vim-processing'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -90,6 +91,7 @@ autocmd FileType markdown nnoremap <Leader>h :! pandoc % --toc -s --mathjax -o %
 " Colors
 highlight Folded ctermfg=4 ctermbg=8
 highlight SpellBad ctermfg=7 ctermbg=9
+highlight Search ctermfg=grey ctermbg=yellow
 
 
 " NerdTree stuff
