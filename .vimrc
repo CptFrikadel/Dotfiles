@@ -41,11 +41,13 @@ Plugin 'ebranlard/vim-matlab-behave'
 Plugin 'justinmk/vim-syntax-extra'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'mkitt/tabline.vim'
-Plugin 'connorholyday/vim-snazzy'
-"Plugin 'stevearc/vim-arduino'
-Plugin 'sophacles/vim-processing'
 Plugin 'itchyny/lightline.vim'
 Plugin 'dracula/vim', {'name':'dracula'}
+Plugin 'ap/vim-css-color'
+Plugin 'jreybert/vimagit'
+Plugin 'vim-python/python-syntax'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -66,6 +68,7 @@ set relativenumber
 set number
 
 syntax on
+set encoding=UTF-8
 
 aug i3config_ft_detection
   au!
@@ -137,3 +140,13 @@ let g:lightline = {
 
 " Remove pipe symbols from splits
 set fillchars+=vert:\ 
+
+" Splits and tabs
+set splitbelow splitright
+
+" Python syntax
+let g:python_highlight_all = 1
+let g:python_highlight_space_errors = 0
+
+" Set tty mouse for Alacritty terminals
+set ttymouse=sgr
