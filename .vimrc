@@ -260,3 +260,6 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+" Add `:Header` command to switch between header and source
+command! -nargs=0 Header :call 	CocAction('runCommand', 'clangd.switchSourceHeader')
