@@ -1,0 +1,8 @@
+{
+
+	"explorer.previewAction.strategy": false,
+	"explorer.icon.enableVimDevicons": true,
+
+	"python.linting.enabled": true,
+	"pyhton.linting.pylintEnabled": true
+}
