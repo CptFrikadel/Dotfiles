@@ -36,7 +36,7 @@ Plugin 'mboughaba/i3config.vim'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'lervag/vimtex'
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 Plugin 'ebranlard/vim-matlab-behave'
 Plugin 'justinmk/vim-syntax-extra'
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -49,6 +49,9 @@ Plugin 'vim-python/python-syntax'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'tpope/vim-surround'
 Plugin 'neoclide/coc.nvim', {'branch' : 'release'}
+
+" Load vim-devicons last
+Plugin 'ryanoasis/vim-devicons'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -118,6 +121,14 @@ set laststatus=2
 set noshowmode
 let g:lightline = {
 	\ 'colorscheme' : 'darcula',
+    \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status',
+      \   'currentfunction': 'CocCurrentFunction'
+      \ },
 	\ }
 
 " Colors from Distro Tube (Dracula theme)
@@ -263,3 +274,6 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 
 " Add `:Header` command to switch between header and source
 command! -nargs=0 Header :call 	CocAction('runCommand', 'clangd.switchSourceHeader')
+
+" Coc explorer shizz
+nmap <leader>e :CocCommand explorer<CR>
