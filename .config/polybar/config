@@ -184,7 +184,7 @@ label-muted =  (%percentage%%)
 
 [module/player-mpris-tail]
 type = custom/script
-exec = ~/polybar-scripts/player-mpris-tail.py -f '{icon} {artist} - {title}'
+exec = ~/.scripts/player-mpris-tail.py -f '{icon} {artist} - {title}'
 tail = true
 label = %output%
 click-left = ~/polybar-scripts/player-mpris-tail.py previous
