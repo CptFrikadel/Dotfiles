@@ -84,6 +84,10 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+PgDn workspace next
 bindsym $mod+PgUp workspace prev
 
+# Add external monitor when connected
+exec --no-startup-id xrandr --output VGA-0 --auto --left-of LVDS
+bindsym $mod+m exec --no-startup-id ~/.scripts/monitorstuff.sh
+
 # workspaces
 set $ws1 1
 set $ws2 2
@@ -94,6 +98,18 @@ set $ws6 6
 set $ws7 7
 set $ws8 8
 set $ws9 9
+
+# Assign workspaces to monitor
+workspace 1 output VGA-0
+workspace 2 output VGA-0
+workspace 3 output VGA-0
+workspace 4 output VGA-0
+workspace 5 output VGA-0
+workspace 6 output LVDS
+workspace 7 output LVDS
+workspace 8 output LVDS
+workspace 9 output LVDS
+
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
