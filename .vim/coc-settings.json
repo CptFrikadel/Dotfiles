@@ -1,6 +1,6 @@
 {
 
-	"explorer.previewAction.strategy": false,
+	"explorer.previewAction.onHover": false,
 	"explorer.icon.enableVimDevicons": true,
 
 	"python.linting.enabled": true,
