@@ -160,6 +160,13 @@ PERL_MB_OPT="--install_base \"/home/alexander/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/alexander/perl5"; export PERL_MM_OPT;
 alias config='/usr/bin/git --git-dir=/home/alexander/.cfg/ --work-tree=/home/alexander'
 
+# VI mode 
+set -o vi
+set show-mode-in-prompt on
+set vi-ins-mode-string "\1\e[6 q\2"
+set vi-cmd-mode-string "\1\e[2 q\2"
+bind -m vi-command 'Control-l: clear-screen'
+bind -m vi-insert 'Control-l: clear-screen'
 
 alias dataenv='source ~/.venv/2IAB0/bin/activate'
 

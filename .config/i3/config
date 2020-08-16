@@ -85,7 +85,7 @@ bindsym $mod+PgDn workspace next
 bindsym $mod+PgUp workspace prev
 
 # Add external monitor when connected
-exec --no-startup-id xrandr --output VGA-0 --auto --left-of LVDS
+exec --no-startup-id xrandr --output VGA-0 --primary --auto --left-of LVDS
 bindsym $mod+m exec --no-startup-id ~/.scripts/monitorstuff.sh
 
 # workspaces
@@ -253,7 +253,7 @@ exec_always --no-startup-id /$HOME/.config/polybar/launch.sh
 exec --no-startup-id dropbox start
 exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id dunst
-exec_always --no-startup-id setxkbmap -option caps:escape
+exec_always --no-startup-id setxkbmap -option compose:menu
 
 # Theme colors
 client.focused #bfbfbf #162025 #bfbfbf #4f4b58 #eff0eb
