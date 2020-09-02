@@ -88,6 +88,10 @@ set tabstop=4
 set shiftwidth=4
 
 
+" Reload file when changed externally
+set autoread
+
+
 " vimtex stuffs
 let g:vimtex_view_general_viewer = 'evince'
 
@@ -96,19 +100,12 @@ autocmd FileType markdown nnoremap <Leader>p :Pandoc pdf <CR>
 autocmd FileType markdown nnoremap <Leader>b :Pandoc beamer <CR>
 autocmd FileType markdown nnoremap <Leader>h :! pandoc % --toc -s --mathjax -o %:r.html <CR>
 
-" autocmd BufwritePost *.md :Pandoc pdf
-
 
 " Colors
 highlight Folded ctermfg=4 ctermbg=8
 highlight SpellBad ctermfg=7 ctermbg=9
 highlight Search ctermfg=grey ctermbg=yellow
 
-
-" NerdTree stuff
-nnoremap <C-n> :NERDTreeToggle <CR>
-" Auto close when tree is only open window
-autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Tab switching
 no <C-j> <C-w>j | "Switching Below tab
