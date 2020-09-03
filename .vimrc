@@ -36,7 +36,6 @@ Plugin 'mboughaba/i3config.vim'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'lervag/vimtex'
-" Plugin 'scrooloose/nerdtree'
 Plugin 'ebranlard/vim-matlab-behave'
 Plugin 'justinmk/vim-syntax-extra'
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -49,6 +48,8 @@ Plugin 'vim-python/python-syntax'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'tpope/vim-surround'
 Plugin 'neoclide/coc.nvim', {'branch' : 'release'}
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
 
 " Load vim-devicons last
 Plugin 'ryanoasis/vim-devicons'
@@ -274,3 +275,6 @@ command! -nargs=0 Header :call 	CocAction('runCommand', 'clangd.switchSourceHead
 
 " Coc explorer shizz
 nmap <leader>e :CocCommand explorer<CR>
+
+" Fzf 
+nnoremap <C-p> :GFiles<CR>
